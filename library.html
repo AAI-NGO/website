@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resource Library — Ancient-Advanced India</title>
+<meta name="description" content="Workshop kits, templates, and event media from Ancient-Advanced India programs.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="loom-field" aria-hidden="true">
+  <svg viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+    <path class="loom-line" stroke="#F87E28" d="M-50,180 C 200,120 400,260 650,200 S 1100,140 1250,220" />
+    <circle class="loom-node" cx="460" cy="210" r="2.5" fill="#F87E28"/>
+  </svg>
+</div>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand-lockup">
+      <img src="assets/logo-mark.png" alt="AAI emblem">
+      <span class="wordmark">
+        <span class="name">Ancient-Advanced India</span>
+        <span class="tag">Aim, Achieve, Inspire</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="library.html">Resource Library</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-banner" style="padding-bottom:2rem;">
+    <div class="container reveal is-visible">
+      <div class="eyebrow">Resource library</div>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.6rem);">Everything we've built,<br><span class="accent-orange">in one place.</span></h1>
+      <p class="lede">Workshop kits, permission letters, and event media — organized into two folders and kept current automatically. New uploads always surface first.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+
+      <div class="library-shell reveal is-visible">
+        <div class="library-toprow">
+          <div>
+            <div class="eyebrow" style="margin-bottom:0.7rem;">Most recent</div>
+            <div class="latest-btn-group">
+              <a href="#" id="latestFileBtn" class="latest-btn">
+                <span class="file-ic-slot"></span>
+                <span class="lb-text">
+                  <span class="lb-label">Loading…</span>
+                  <span class="lb-name">—</span>
+                </span>
+              </a>
+              <button id="dropdownTrigger" class="latest-btn" style="position:absolute;inset:0;background:transparent;border:none;width:40px;margin-left:auto;cursor:pointer;" aria-label="Show all files">
+                <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:auto;"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div id="fileDropdown" class="file-dropdown"></div>
+            </div>
+          </div>
+          <div class="live-badge"><span class="live-dot"></span> Updated regularly</div>
+        </div>
+
+        <div class="library-tabs">
+          <button class="lib-tab active" data-folder="workshop-materials">Workshop Materials</button>
+          <button class="lib-tab" data-folder="media-gallery">Media Gallery</button>
+        </div>
+
+        <div id="fileTable" class="file-table"></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-lockup" style="margin-bottom:1rem;">
+          <img src="assets/logo-mark.png" alt="AAI emblem" style="height:44px;">
+          <span class="wordmark">
+            <span class="name">Ancient-Advanced India</span>
+            <span class="tag">Every Village AI Enabled</span>
+          </span>
+        </div>
+        <p style="font-size:0.88rem;">Bridging India's villages with AI literacy, rural entrepreneurship, and agricultural innovation — one workshop at a time.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About AAI</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="library.html">Resource Library</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="contact.html#partner">Partner with us</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="https://wa.me/919341102949" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="cur-year"></span> Ancient-Advanced India. Karnataka, India.</span>
+      <span class="footer-tagline">Aim · Achieve · Inspire</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/file-library.js"></script>
+</body>
+</html>
