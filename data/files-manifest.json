@@ -1,0 +1,20 @@
+{
+  "workshop-materials": [
+    {
+      "name": "AI in Education — Pilot Workshop Kit.pdf",
+      "path": "workshop-materials/ai-in-education-workshop-kit.pdf",
+      "date": "2026-06-15",
+      "size": "412 KB",
+      "type": "pdf"
+    },
+    {
+      "name": "Permission Request Letter Template.pdf",
+      "path": "workshop-materials/permission-request-template.pdf",
+      "date": "2026-06-10",
+      "size": "98 KB",
+      "type": "pdf"
+    }
+  ],
+  "media-gallery": [
+  ]
+}
