@@ -1,0 +1,680 @@
+/* ===================================================================
+   ANCIENT-ADVANCED INDIA (AAI) — Innovation & Learner Portal System
+   Styles for Multi-Account System, Session Attendance, Feedback Gate,
+   Institute Bookings, Certificate Generator & NGO Darpan Audit Vault
+   =================================================================== */
+
+/* --- Custom Variables & Accent Themes --- */
+:root {
+  --portal-bg: #FAFAF8;
+  --portal-card-bg: #FFFFFF;
+  --portal-border: #E5E3DC;
+  --portal-primary: #F87E28;      /* AAI Orange */
+  --portal-primary-hover: #E06C17;
+  --portal-secondary: #1880C9;    /* AAI Blue */
+  --portal-secondary-hover: #1168A6;
+  --portal-success: #1E8E3E;      /* AAI Green */
+  --portal-dark: #1A1A1A;
+  --portal-gray-100: #F3F2EE;
+  --portal-gray-200: #E7E5DF;
+  --portal-gray-600: #6B6860;
+  --portal-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --portal-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Section Container --- */
+.platform-section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F7F3 100%);
+  position: relative;
+  border-top: 1px solid var(--portal-border);
+}
+
+.platform-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header & Navigation Tabs --- */
+.platform-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(248, 126, 40, 0.12);
+  color: var(--portal-primary);
+  border: 1px solid rgba(248, 126, 40, 0.25);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.platform-title {
+  font-family: var(--font-display, serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: var(--portal-dark);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.platform-subtitle {
+  font-size: 1.1rem;
+  color: var(--portal-gray-600);
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* --- Language Toggle & Action Pill --- */
+.lang-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.lang-btn {
+  background: #FFFFFF;
+  border: 1px solid var(--portal-border);
+  color: var(--portal-dark);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.85rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  background: var(--portal-dark);
+  color: #FFFFFF;
+  border-color: var(--portal-dark);
+}
+
+/* --- Primary Navigation Tabs --- */
+.portal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #EDEBE6;
+  padding: 0.4rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto 2.5rem;
+}
+
+.portal-tab-btn {
+  flex: 1 1 auto;
+  min-width: 140px;
+  background: transparent;
+  border: none;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--portal-gray-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.portal-tab-btn:hover {
+  color: var(--portal-dark);
+}
+
+.portal-tab-btn.active {
+  background: #FFFFFF;
+  color: var(--portal-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Tab Panels --- */
+.portal-panel {
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.portal-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Cards & Grid Layouts --- */
+.portal-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.portal-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.portal-card {
+  background: var(--portal-card-bg);
+  border: 1px solid var(--portal-border);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: var(--portal-shadow);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--portal-shadow-lg);
+}
+
+.portal-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--portal-gray-200);
+}
+
+.portal-card-title {
+  font-family: var(--font-display, serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--portal-dark);
+}
+
+/* --- Forms & Inputs --- */
+.portal-form-group {
+  margin-bottom: 1.25rem;
+}
+
+.portal-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--portal-dark);
+  margin-bottom: 0.4rem;
+}
+
+.portal-label span.req {
+  color: #D32F2F;
+}
+
+.portal-label span.opt {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--portal-gray-600);
+  margin-left: 0.25rem;
+}
+
+.portal-input, .portal-select, .portal-textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: #FFFFFF;
+  border: 1px solid var(--portal-border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--portal-dark);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portal-input:focus, .portal-select:focus, .portal-textarea:focus {
+  outline: none;
+  border-color: var(--portal-secondary);
+  box-shadow: 0 0 0 3px rgba(24, 128, 201, 0.15);
+}
+
+.portal-help {
+  font-size: 0.78rem;
+  color: var(--portal-gray-600);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* --- Buttons --- */
+.p-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.p-btn-primary {
+  background: var(--portal-primary);
+  color: #FFFFFF;
+}
+
+.p-btn-primary:hover {
+  background: var(--portal-primary-hover);
+  box-shadow: 0 4px 14px rgba(248, 126, 40, 0.35);
+}
+
+.p-btn-secondary {
+  background: var(--portal-secondary);
+  color: #FFFFFF;
+}
+
+.p-btn-secondary:hover {
+  background: var(--portal-secondary-hover);
+  box-shadow: 0 4px 14px rgba(24, 128, 201, 0.35);
+}
+
+.p-btn-success {
+  background: var(--portal-success);
+  color: #FFFFFF;
+}
+
+.p-btn-outline {
+  background: transparent;
+  border: 1px solid var(--portal-border);
+  color: var(--portal-dark);
+}
+
+.p-btn-outline:hover {
+  background: var(--portal-gray-100);
+}
+
+.p-btn-sm {
+  font-size: 0.82rem;
+  padding: 0.45rem 0.85rem;
+}
+
+.p-btn-block {
+  width: 100%;
+}
+
+/* --- User Status & Badges --- */
+.user-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.user-badge-green {
+  background: #E6F4EA;
+  color: #137333;
+}
+
+.user-badge-orange {
+  background: #FEF7E0;
+  color: #B06000;
+}
+
+.user-badge-blue {
+  background: #E8F0FE;
+  color: #1967D2;
+}
+
+/* --- Session Card & Locked/Unlocked Status --- */
+.session-card {
+  border: 1px solid var(--portal-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #FFFFFF;
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.session-card.active-session {
+  border-color: var(--portal-secondary);
+}
+
+.session-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.session-id {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--portal-secondary);
+  background: rgba(24, 128, 201, 0.08);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.session-title {
+  font-family: var(--font-display, serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--portal-dark);
+  margin-bottom: 0.4rem;
+}
+
+.session-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--portal-gray-600);
+  margin-bottom: 1rem;
+}
+
+.session-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* --- Feedback Gate Alert --- */
+.gate-box {
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gate-box.locked {
+  background: #FFF8E1;
+  border: 1px solid #FFE082;
+  color: #795548;
+}
+
+.gate-box.unlocked {
+  background: #E8F5E9;
+  border: 1px solid #A5D6A7;
+  color: #1B5E20;
+}
+
+/* --- Resource List inside Unlocked Gate --- */
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.9rem;
+  background: #FFFFFF;
+  border: 1px solid var(--portal-border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.resource-item:hover {
+  border-color: var(--portal-secondary);
+}
+
+/* --- Interactive Star Rating --- */
+.star-rating {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.star-rating span {
+  font-size: 1.8rem;
+  color: #D1CFC7;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star-rating span:hover,
+.star-rating span.selected {
+  color: #F87E28;
+  transform: scale(1.15);
+}
+
+/* --- Certificate Modal / Viewer --- */
+.cert-preview-card {
+  background: #FFFFFF;
+  border: 2px solid #C4A45B;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  background-image: radial-gradient(circle at 50% 50%, #FCFBF7 0%, #FFFFFF 100%);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.cert-border-inner {
+  border: 1px dashed #C4A45B;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.cert-seal {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0.75rem auto;
+}
+
+.cert-student-name {
+  font-family: var(--font-display, serif);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--portal-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--portal-primary);
+  margin: 0.5rem 0;
+}
+
+/* --- Audit & Admin Tables --- */
+.admin-table-wrap {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  border: 1px solid var(--portal-border);
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.admin-table th {
+  background: #F4F3EE;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--portal-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--portal-border);
+}
+
+.admin-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--portal-gray-100);
+  color: var(--portal-dark);
+}
+
+.admin-table tr:hover td {
+  background: #FAF9F5;
+}
+
+/* --- 11 Trust Deed Missions Grid --- */
+.mission-card-domain {
+  border: 1px solid var(--portal-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.mission-card-domain:hover {
+  border-color: var(--portal-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--portal-shadow);
+}
+
+.mission-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--portal-primary);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.mission-title {
+  font-family: var(--font-display, serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--portal-dark);
+  margin-bottom: 0.5rem;
+}
+
+.mission-desc {
+  font-size: 0.88rem;
+  color: var(--portal-gray-600);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.mission-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.mission-tag {
+  background: var(--portal-gray-100);
+  color: var(--portal-dark);
+  font-size: 0.72rem;
+  font-family: var(--font-mono, monospace);
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* --- Modal Popup --- */
+.p-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.p-modal.show {
+  display: flex;
+}
+
+.p-modal-content {
+  background: #FFFFFF;
+  border-radius: 16px;
+  max-width: 650px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.25rem;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  animation: modalScale 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.p-modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--portal-gray-600);
+}
+
+.p-modal-close:hover {
+  color: var(--portal-dark);
+}
+
+/* Toast Message */
+.toast-msg {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--portal-dark);
+  color: #FFFFFF;
+  padding: 0.85rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .portal-tabs {
+    flex-direction: column;
+  }
+  .session-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cert-student-name {
+    font-size: 1.5rem;
+  }
+}

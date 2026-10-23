@@ -1,0 +1,48 @@
+{
+  "workshop-materials": [
+    {
+      "name": "AI in Education — Pilot Workshop Kit (Student Agenda & Checklists)",
+      "path": "workshop-materials/ai-in-education-workshop-kit.pdf",
+      "date": "2026-07-21",
+      "size": "31 KB",
+      "type": "pdf"
+    },
+    {
+      "name": "Presentation 1: AI in Rural Education (Student Edition - Kannada & English)",
+      "path": "workshop-materials/presentation-1-ai-in-rural-education.pdf",
+      "date": "2026-06-22",
+      "size": "95 KB",
+      "type": "pdf"
+    },
+    {
+      "name": "Presentation 2: AI for Educators & Institution Management (Kannada & English)",
+      "path": "workshop-materials/presentation-2-ai-for-educators-and-institutions.pdf",
+      "date": "2026-06-22",
+      "size": "84 KB",
+      "type": "pdf"
+    },
+    {
+      "name": "Ancient to Advanced India — Foundational Mission Charter",
+      "path": "workshop-materials/ancient-to-advanced-india-foundational-charter.pdf",
+      "date": "2026-06-21",
+      "size": "29 KB",
+      "type": "pdf"
+    },
+    {
+      "name": "Permission Request Letter Template for Institutions",
+      "path": "workshop-materials/permission-request-template.pdf",
+      "date": "2026-06-10",
+      "size": "19 KB",
+      "type": "pdf"
+    }
+  ],
+  "media-gallery": [
+    {
+      "name": "AAI Strategic Vision Roadmap 2051",
+      "path": "media-gallery/aai-strategic-vision-roadmap-2051.png",
+      "date": "2026-07-18",
+      "size": "7.4 MB",
+      "type": "image"
+    }
+  ]
+}
