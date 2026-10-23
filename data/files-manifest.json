@@ -22,6 +22,34 @@
       "type": "pdf"
     },
     {
+      "name": "Brochure: AI for Education & Employability (Colleges & Schools)",
+      "path": "brochures/brochure-education.html",
+      "date": "2026-10-23",
+      "size": "A4 Print Ready",
+      "type": "doc"
+    },
+    {
+      "name": "Brochure: AI for Women Empowerment & Micro-Enterprises",
+      "path": "brochures/brochure-women-empowerment.html",
+      "date": "2026-10-23",
+      "size": "A4 Print Ready",
+      "type": "doc"
+    },
+    {
+      "name": "Brochure: AI in Daily Life & Smart Rural Communities",
+      "path": "brochures/brochure-daily-life.html",
+      "date": "2026-10-23",
+      "size": "A4 Print Ready",
+      "type": "doc"
+    },
+    {
+      "name": "Brochure: Build Your Own AI Enterprise (Startups & Innovation)",
+      "path": "brochures/brochure-ai-enterprise.html",
+      "date": "2026-10-23",
+      "size": "A4 Print Ready",
+      "type": "doc"
+    },
+    {
       "name": "Ancient to Advanced India — Foundational Mission Charter",
       "path": "workshop-materials/ancient-to-advanced-india-foundational-charter.pdf",
       "date": "2026-06-21",
