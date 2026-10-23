@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketing & Outreach Brochures — Ancient-Advanced India (AAI)</title>
+  <title>Marketing & Outreach Brochures Suite — Ancient-Advanced India (AAI)</title>
   <link rel="icon" href="../assets/logo-mark.png">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/pages.css">
@@ -11,7 +11,7 @@
   <style>
     .brochure-hub-hero {
       background: linear-gradient(180deg, #FFFFFF 0%, #F7F6F2 100%);
-      padding: 5rem 1.5rem 3rem;
+      padding: 5rem 1.5rem 2.5rem;
       text-align: center;
       border-bottom: 1px solid var(--portal-border);
     }
@@ -21,7 +21,7 @@
       border-left: 6px solid var(--portal-primary);
       border-radius: 12px;
       padding: 1.5rem 2rem;
-      max-width: 900px;
+      max-width: 980px;
       margin: 2rem auto 0;
       display: flex;
       flex-wrap: wrap;
@@ -32,7 +32,7 @@
     }
     .track-record-title {
       font-family: var(--font-display);
-      font-size: 1.6rem;
+      font-size: 1.65rem;
       font-weight: 800;
       color: #BF360C;
       line-height: 1.2;
@@ -43,12 +43,42 @@
       margin-top: 0.35rem;
       line-height: 1.5;
     }
+    .category-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 2.5rem auto 1rem;
+      max-width: 950px;
+      padding: 0 1rem;
+    }
+    .filter-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--portal-border);
+      color: var(--portal-dark);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover {
+      border-color: var(--portal-primary);
+      color: var(--portal-primary);
+    }
+    .filter-btn.active {
+      background: var(--portal-dark);
+      color: #FFFFFF;
+      border-color: var(--portal-dark);
+    }
     .brochures-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
-      max-width: 1200px;
-      margin: 3.5rem auto;
+      max-width: 1240px;
+      margin: 2.5rem auto 5rem;
       padding: 0 1.5rem;
     }
     .brochure-card {
@@ -56,7 +86,7 @@
       border: 1px solid var(--portal-border);
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
       transition: all 0.25s ease;
       display: flex;
       flex-direction: column;
@@ -64,20 +94,19 @@
     }
     .brochure-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
       border-color: var(--portal-primary);
     }
     .card-top-accent {
-      height: 8px;
-      background: var(--portal-primary);
+      height: 7px;
     }
     .card-body {
-      padding: 2rem;
+      padding: 1.75rem;
       flex: 1;
     }
     .card-tag {
       font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -86,34 +115,35 @@
     }
     .card-title {
       font-family: var(--font-display);
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       font-weight: 800;
       color: var(--portal-dark);
       line-height: 1.25;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
     .card-kannada {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
       color: var(--portal-primary);
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
     .card-desc {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--portal-gray-600);
       line-height: 1.55;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
     .card-audiences {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       background: var(--portal-gray-100);
-      padding: 0.6rem 0.9rem;
+      padding: 0.55rem 0.85rem;
       border-radius: 8px;
       color: var(--portal-dark);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.45;
     }
     .card-footer {
-      padding: 1.25rem 2rem;
+      padding: 1rem 1.75rem;
       background: #FAF9F5;
       border-top: 1px solid var(--portal-border);
       display: flex;
@@ -140,7 +170,7 @@
       <a href="../about.html">About & Charter</a>
       <a href="../programs.html">Programs</a>
       <a href="../library.html">Resource Library</a>
-      <a href="index.html" style="color:var(--primary); font-weight:700;">Brochures</a>
+      <a href="index.html" style="color:var(--primary); font-weight:700;">Brochures (11)</a>
       <a href="../contact.html">Contact</a>
     </nav>
   </div>
@@ -151,9 +181,9 @@
   <section class="brochure-hub-hero">
     <div class="container">
       <span class="platform-badge">OFFICIAL MARKETING & OUTREACH COLLATERAL</span>
-      <h1 class="platform-title" style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Marketing Brochures & Session Kits</h1>
+      <h1 class="platform-title" style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Target Audience Brochure Suite</h1>
       <p class="platform-subtitle">
-        High-impact, ready-to-print marketing brochures for inviting schools, degree colleges, women's self-help groups (SHGs), gram panchayats, and aspiring tech entrepreneurs to host AAI training programs.
+        Specialized, print-ready A4 marketing brochures tailored for every stream of society — from farmers, rural women, and citizens to engineering, computer science, medical, commerce, and research scholars.
       </p>
 
       <!-- Key Highlight Banner -->
@@ -161,14 +191,24 @@
         <div>
           <div class="track-record-title">⚡ Trained Over 5,000+ People in AI So Far</div>
           <div class="track-record-sub">
-            Helping students, rural women, farmers, and youth <strong>build their own AI enterprises to help society innovate</strong>. All sessions are zero-fee public charitable initiatives under AAI Trust.
+            Bridging timeless wisdom with modern innovation — helping individuals across every stream <strong>build their own AI enterprises to help society innovate</strong>. All sessions are zero-fee public charitable initiatives under AAI Trust.
           </div>
         </div>
         <div>
           <a href="../index.html#platform-section" class="p-btn p-btn-primary" style="white-space: nowrap;">
-            🏛️ Book Institutional Session
+            🏛️ Book a Session
           </a>
         </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="category-filter-bar">
+        <button class="filter-btn active" data-filter="all">All 11 Streams</button>
+        <button class="filter-btn" data-filter="engineering">Engineering & Tech</button>
+        <button class="filter-btn" data-filter="medical-science">Medical & Research</button>
+        <button class="filter-btn" data-filter="commerce-law">Commerce & Law</button>
+        <button class="filter-btn" data-filter="rural-community">Rural & Agriculture</button>
+        <button class="filter-btn" data-filter="enterprise">Startups & Enterprises</button>
       </div>
     </div>
   </section>
@@ -176,91 +216,179 @@
   <!-- Brochures Grid -->
   <section class="brochures-grid">
 
-    <!-- Card 1: Educational Institutes -->
-    <div class="brochure-card">
-      <div class="card-top-accent" style="background:#1880C9;"></div>
-      <div class="card-body">
-        <span class="card-tag" style="color:#1880C9;">Colleges & Higher Education</span>
-        <h2 class="card-title">AI for Future Education & Employability</h2>
-        <div class="card-kannada">ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ (AI) ಮೂಲಕ ಗ್ರಾಮೀಣ ಶಿಕ್ಷಣ ಮತ್ತು ವೃತ್ತಿ ಕೌಶಲ್ಯ</div>
-        <p class="card-desc">
-          Introduces students to 24/7 personal study tutors, KCET/NEET exam accelerators, future tech careers (prompting, BIM, agritech), and equips teachers with 15-minute lesson planning automation.
-        </p>
-        <div class="card-audiences">
-          <strong>Target:</strong> Degree Colleges, Universities, Engineering & ITI Institutes, PUCs, High Schools.
-        </div>
-      </div>
-      <div class="card-footer">
-        <span style="font-size:0.8rem; font-family:var(--font-mono); color:var(--portal-gray-600);">Format: A4 Print Ready</span>
-        <a href="brochure-education.html" class="p-btn p-btn-secondary p-btn-sm">
-          👁️ View & Print A4
-        </a>
-      </div>
-    </div>
-
-    <!-- Card 2: Women Empowerment -->
-    <div class="brochure-card">
-      <div class="card-top-accent" style="background:#C2185B;"></div>
-      <div class="card-body">
-        <span class="card-tag" style="color:#C2185B;">Women Leadership & SHG</span>
-        <h2 class="card-title">AI for Women Empowerment & Micro-Enterprise</h2>
-        <div class="card-kannada">ಮಹಿಳಾ ಸಬಲೀಕರಣ, ಡಿಜಿಟಲ್ ಉದ್ಯಮಶೀಲತೆ ಮತ್ತು ಆರ್ಥಿಕ ಸ್ವಾವಲಂಬನೆ</div>
-        <p class="card-desc">
-          Overcomes language/typing barriers with vernacular voice-first AI. Teaches rural women how to package, market, and sell home products, handle UPI safely, and build independent micro-businesses.
-        </p>
-        <div class="card-audiences">
-          <strong>Target:</strong> Women Self-Help Groups (SHGs), Stree Shakti Sanghas, Rural Women Leaders, Gram Panchayats.
-        </div>
-      </div>
-      <div class="card-footer">
-        <span style="font-size:0.8rem; font-family:var(--font-mono); color:var(--portal-gray-600);">Format: A4 Print Ready</span>
-        <a href="brochure-women-empowerment.html" class="p-btn p-btn-primary p-btn-sm" style="background:#C2185B;">
-          👁️ View & Print A4
-        </a>
-      </div>
-    </div>
-
-    <!-- Card 3: Daily Life & Rural Communities -->
-    <div class="brochure-card">
+    <!-- 1. Farmers & Agri -->
+    <div class="brochure-card" data-category="rural-community enterprise">
       <div class="card-top-accent" style="background:#2E7D32;"></div>
       <div class="card-body">
-        <span class="card-tag" style="color:#2E7D32;">Citizens & Agriculture</span>
-        <h2 class="card-title">AI in Daily Life & Smart Communities</h2>
-        <div class="card-kannada">ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ, ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ಮತ್ತು ಸಮೃದ್ಧಿ</div>
-        <p class="card-desc">
-          Demystifies AI for everyday living: crop disease diagnosis by photo, 7-day weather forecasts, government scheme eligibility checks, healthcare translation, and village household productivity.
-        </p>
-        <div class="card-audiences">
-          <strong>Target:</strong> Farmers, FPOs, Village Panchayats, Small Shop Owners, Community Elders, Rural Citizens.
-        </div>
+        <span class="card-tag" style="color:#2E7D32;">Agriculture & FPOs</span>
+        <h2 class="card-title">AI for Farmers & Precision Agriculture</h2>
+        <div class="card-kannada">ರೈತರಿಗಾಗಿ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಮತ್ತು ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ಪದ್ಧತಿ</div>
+        <p class="card-desc">Photo-based crop disease diagnosis, localized 7-day weather forecasts, precision nutrient balancing, and direct market price discovery.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Smallholders, FPOs, Agri-entrepreneurs, Krishi Vigyan Kendras (KVKs).</div>
       </div>
       <div class="card-footer">
-        <span style="font-size:0.8rem; font-family:var(--font-mono); color:var(--portal-gray-600);">Format: A4 Print Ready</span>
-        <a href="brochure-daily-life.html" class="p-btn p-btn-success p-btn-sm">
-          👁️ View & Print A4
-        </a>
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-farmers.html" class="p-btn p-btn-success p-btn-sm">👁️ View & Print</a>
       </div>
     </div>
 
-    <!-- Card 4: Build Your Own AI Enterprise -->
-    <div class="brochure-card">
-      <div class="card-top-accent" style="background:#E65100;"></div>
+    <!-- 2. Civil Engineers -->
+    <div class="brochure-card" data-category="engineering enterprise">
+      <div class="card-top-accent" style="background:#1565C0;"></div>
       <div class="card-body">
-        <span class="card-tag" style="color:#E65100;">Startups & Societal Innovation</span>
-        <h2 class="card-title">Build Your Own AI Enterprise</h2>
-        <div class="card-kannada">ಸ್ವಂತ AI ಉದ್ಯಮ ನಿರ್ಮಾಣ: ಸಮಾಜದ ನಾವೀನ್ಯತೆಗಾಗಿ ಯುವಜನತೆ</div>
-        <p class="card-desc">
-          Guides ambitious youth to build high-impact tech ventures from their villages using low-code AI tooling. Solves root societal challenges in agritech, logistics, and education while creating local jobs.
-        </p>
-        <div class="card-audiences">
-          <strong>Target:</strong> Engineering & Degree Graduates, Aspiring Tech Founders, Youth Innovators, Incubators, CSR Teams.
-        </div>
+        <span class="card-tag" style="color:#1565C0;">Civil, BIM & Infrastructure</span>
+        <h2 class="card-title">AI & BIM for Civil Engineers</h2>
+        <div class="card-kannada">ಸಿವಿಲ್ ಎಂಜಿನಿಯರ್‌ಗಳಿಗಾಗಿ AI ಮತ್ತು BIM ತಂತ್ರಜ್ಞಾನ</div>
+        <p class="card-desc">BIM coordination, IFC/BCF open standards, automated quantity take-off (QTO), digital twins, and launching civil-tech consulting firms.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Civil Engineering Students, Diploma, Architects, Structural Engineers, Contractors.</div>
       </div>
       <div class="card-footer">
-        <span style="font-size:0.8rem; font-family:var(--font-mono); color:var(--portal-gray-600);">Format: A4 Print Ready</span>
-        <a href="brochure-ai-enterprise.html" class="p-btn p-btn-primary p-btn-sm" style="background:#E65100;">
-          👁️ View & Print A4
-        </a>
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-civil-engineers.html" class="p-btn p-btn-secondary p-btn-sm">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 3. IT & Computer Science -->
+    <div class="brochure-card" data-category="engineering enterprise">
+      <div class="card-top-accent" style="background:#8E24AA;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#8E24AA;">IT, CS, BCA & Developers</span>
+        <h2 class="card-title">AI Engineering: Prompting to Agents</h2>
+        <div class="card-kannada">ಐಟಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ AI ಎಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಸ್ವಾಯತ್ತ ಸಿಸ್ಟಮ್ಸ್</div>
+        <p class="card-desc">Prompt chaining, RAG knowledge retrieval, vector databases, autonomous multi-agent systems, and building commercial micro-SaaS startups.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Computer Science, IT, BCA, MCA, AI/DS students, Aspiring Coders.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-it-cs.html" class="p-btn p-btn-primary p-btn-sm" style="background:#8E24AA;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 4. Medical & Healthcare -->
+    <div class="brochure-card" data-category="medical-science">
+      <div class="card-top-accent" style="background:#C62828;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#C62828;">Medical, Nursing & Pharmacy</span>
+        <h2 class="card-title">AI in Healthcare & Clinical Medicine</h2>
+        <div class="card-kannada">ವೈದ್ಯಕೀಯ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ AI: ಕ್ಲಿನಿಕಲ್ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್</div>
+        <p class="card-desc">Diagnostic AI in radiology/ECG, pharmacological drug interaction screening, rural tele-medicine triage, and health-tech micro-clinics.</p>
+        <div class="card-audiences"><strong>Audience:</strong> MBBS, BDS, Nursing, B.Pharm, Allied Health Sciences, Rural Clinicians.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-medical-healthcare.html" class="p-btn p-btn-primary p-btn-sm" style="background:#C62828;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 5. Research Scholars & Ph.D. -->
+    <div class="brochure-card" data-category="medical-science">
+      <div class="card-top-accent" style="background:#00838F;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#00838F;">Ph.D., Post-Docs & Faculty</span>
+        <h2 class="card-title">AI for Research Scholars & Discovery</h2>
+        <div class="card-kannada">ಸಂಶೋಧಕರು ಮತ್ತು ಪಿಎಚ್‌ಡಿ ವಿದ್ವಾಂಸರಿಗಾಗಿ AI ಮತ್ತು ಪೇಟೆಂಟ್ಸ್</div>
+        <p class="card-desc">Semantic literature synthesis, hypothesis generation, AI data analytics, peer-reviewed paper structuring, and grassroots patent commercialization.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Doctoral Scholars, M.Phil, PG Researchers (M.Sc/M.Tech), Faculty.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-research-scholars.html" class="p-btn p-btn-primary p-btn-sm" style="background:#00838F;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 6. Accounting & Finance -->
+    <div class="brochure-card" data-category="commerce-law enterprise">
+      <div class="card-top-accent" style="background:#E65100;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#E65100;">Commerce, CA & Finance</span>
+        <h2 class="card-title">AI in Accounting & Financial Analysis</h2>
+        <div class="card-kannada">ಅಕೌಂಟಿಂಗ್ ಮತ್ತು ಹಣಕಾಸಿನಲ್ಲಿ AI: ಮುಂದಿನ ಪೀಳಿಗೆಯ ಸಿಎ</div>
+        <p class="card-desc">Automated optical bookkeeping, GST reconciliation, cash flow sensitivity models, forensic audit fraud detection, and virtual CFO firms.</p>
+        <div class="card-audiences"><strong>Audience:</strong> B.Com, M.Com, CA / CMA / CS aspirants, MBA Finance, Tax Practitioners.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-accounting-finance.html" class="p-btn p-btn-primary p-btn-sm" style="background:#E65100;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 7. Law & Civic Governance -->
+    <div class="brochure-card" data-category="commerce-law">
+      <div class="card-top-accent" style="background:#37474F;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#37474F;">Law, Advocates & Governance</span>
+        <h2 class="card-title">AI for Legal & Civic Professionals</h2>
+        <div class="card-kannada">ಕಾನೂನು ಮತ್ತು ಸಾರ್ವಜನಿಕ ಆಡಳಿತದಲ್ಲಿ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ</div>
+        <p class="card-desc">Semantic case law search across Indian courts, automated bilingual contract drafting, RTI petition generation, and civic-tech dispute portals.</p>
+        <div class="card-audiences"><strong>Audience:</strong> LL.B, LL.M, Advocates, Judicial Aspirants, Panchayat Secretaries, Civic Leaders.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-law-governance.html" class="p-btn p-btn-primary p-btn-sm" style="background:#37474F;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 8. Educational Institutes & Colleges -->
+    <div class="brochure-card" data-category="engineering medical-science commerce-law">
+      <div class="card-top-accent" style="background:#1880C9;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#1880C9;">Colleges & Higher Ed</span>
+        <h2 class="card-title">AI for Education & Employability</h2>
+        <div class="card-kannada">ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ (AI) ಮೂಲಕ ಗ್ರಾಮೀಣ ಶಿಕ್ಷಣದ ಪ್ರಗತಿ</div>
+        <p class="card-desc">Personal 24/7 tutors for science and math, exam prep for KCET/NEET, spoken English practice, and 15-minute teacher lesson planning.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Universities, Degree Colleges, PUCs, High School Management, Principals.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-education.html" class="p-btn p-btn-secondary p-btn-sm">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 9. Women Empowerment -->
+    <div class="brochure-card" data-category="rural-community enterprise">
+      <div class="card-top-accent" style="background:#C2185B;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#C2185B;">Women Empowerment & SHGs</span>
+        <h2 class="card-title">AI for Women Empowerment & Enterprise</h2>
+        <div class="card-kannada">ಮಹಿಳಾ ಸಬಲೀಕರಣ, ಡಿಜಿಟಲ್ ಉದ್ಯಮಶೀಲತೆ ಮತ್ತು ಆರ್ಥಿಕತೆ</div>
+        <p class="card-desc">Voice-first Kannada AI tools, home-made brand marketing, direct selling on WhatsApp, digital payments safety, and launching micro-enterprises.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Women SHGs, Stree Shakti, Rural Women Entrepreneurs, Village Leaders.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-women-empowerment.html" class="p-btn p-btn-primary p-btn-sm" style="background:#C2185B;">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 10. Daily Life & Rural Communities -->
+    <div class="brochure-card" data-category="rural-community">
+      <div class="card-top-accent" style="background:#2E7D32;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#2E7D32;">Citizens & Daily Living</span>
+        <h2 class="card-title">AI in Daily Life & Rural Prosperity</h2>
+        <div class="card-kannada">ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಮತ್ತು ಗ್ರಾಮೀಣ ಸಮೃದ್ಧಿ</div>
+        <p class="card-desc">Demystifying AI for everyday households: welfare scheme navigators, healthcare translation, crop monitoring, and local tradesman billing.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Gram Panchayats, Shop Owners, Elders, Village Youth, Rural Citizens.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-daily-life.html" class="p-btn p-btn-success p-btn-sm">👁️ View & Print</a>
+      </div>
+    </div>
+
+    <!-- 11. Build Your Own AI Enterprise -->
+    <div class="brochure-card" data-category="enterprise engineering">
+      <div class="card-top-accent" style="background:#F87E28;"></div>
+      <div class="card-body">
+        <span class="card-tag" style="color:#F87E28;">Startups & Societal Innovation</span>
+        <h2 class="card-title">Build Your Own AI Enterprise</h2>
+        <div class="card-kannada">ಸ್ವಂತ AI ಉದ್ಯಮ ನಿರ್ಮಾಣ: ಸಮಾಜದ ನಾವೀನ್ಯತೆಗಾಗಿ ಯುವಜನತೆ</div>
+        <p class="card-desc">Turning youth from job seekers into job creators. Rapid MVP prototyping, remote freelancing, and accessing CSR seed funding to solve root societal problems.</p>
+        <div class="card-audiences"><strong>Audience:</strong> Aspiring Founders, Engineering/Degree Graduates, Rural Innovators, Incubators.</div>
+      </div>
+      <div class="card-footer">
+        <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--portal-gray-600);">A4 Print Ready</span>
+        <a href="brochure-ai-enterprise.html" class="p-btn p-btn-primary p-btn-sm">👁️ View & Print</a>
       </div>
     </div>
 
@@ -275,6 +403,26 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Filter functionality
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      const filter = e.target.getAttribute('data-filter');
+      
+      document.querySelectorAll('.brochure-card').forEach(card => {
+        if (filter === 'all') {
+          card.style.display = 'flex';
+        } else {
+          const cats = card.getAttribute('data-category') || '';
+          card.style.display = cats.includes(filter) ? 'flex' : 'none';
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
